@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carlosamas MMI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="video" href="Sin título.mp4" fetchpriority="high">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <section class="hero" aria-label="Presentación">
+    <div class="hero-inner">
+      <video
+        id="heroVideo"
+        class="hero-video"
+        src="Sin título.mp4"
+        muted
+        playsinline
+        autoplay
+        loop
+        preload="auto"
+        fetchpriority="high"
+      ></video>
+      <div class="hero-scrim" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <header class="site-header">
+    <h1>Carlosamas MMI</h1>
+    <nav class="header-videos" aria-label="Videos de producto">
+      <button type="button" class="nav-dropdown-toggle" id="videoNavToggle" aria-expanded="false" aria-controls="videoNavMenu" aria-haspopup="true">
+        Videos
+      </button>
+      <div class="nav-dropdown-menu" id="videoNavMenu" hidden>
+        <a href="index22.html" class="nav-video-btn" data-prefetch-video="romanos.mp4">Romanos</a>
+        <a href="index23.html" class="nav-video-btn" data-prefetch-video="raven.mp4">Raven</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="music-panel" aria-label="Música de fondo">
+    <h2 class="music-title">do you like this music?</h2>
+    <a
+      class="music-channel-link"
+      href="https://youtube.com/@jd_co?si=Y3yKQf4L6gAm1nYS"
+      target="_blank"
+      rel="noopener noreferrer"
+    >youtube.com/@jd_co</a>
+    <div class="music-actions">
+      <button type="button" id="musicToggle" class="music-toggle">Activar música</button>
+    </div>
+  </section>
+
+  <audio id="bgMusicAudio" class="music-audio" preload="none"></audio>
+
+  <main class="products-grid">
+    <section class="product-card" data-product="Zapato de vestir en cuero">
+      <div class="product-visual">
+        <img loading="lazy" decoding="async" src="zapato.jpg" alt="Zapato de vestir en cuero negro">
+      </div>
+      <div class="card-body">
+        <h2>Zapato de vestir — Cuero</h2>
+        <p>Calzado de vestir en cuero con silueta clásica y acabado sobrio. Pensado para protocolo, reuniones y jornadas de negocio.</p>
+        <div class="price">$900.000 COP</div>
+        <div class="buttons">
+          <button type="button" class="buy-button">Pagar</button>
+          <button type="button" class="whatsapp-button">WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-card" data-product="Correa en cuero — Blanco">
+      <div class="product-visual">
+        <img loading="lazy" decoding="async" src="blanca.webp" alt="Correa de cuero color blanco">
+      </div>
+      <div class="card-body">
+        <h2>Correa — Blanco</h2>
+        <p>Correa en piel, tono blanco. Línea limpia y discreta; combina con traje claro o como contraste en conjuntos oscuros.</p>
+        <div class="price">$345.000 COP</div>
+        <div class="buttons">
+          <button type="button" class="buy-button">Pagar</button>
+          <button type="button" class="whatsapp-button">WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-card" data-product="Correa en cuero — Negro vino tinto">
+      <div class="product-visual">
+        <img loading="lazy" decoding="async" src="NEGRA VINOTINTO.jpg" alt="Correa de cuero color vino tinto">
+      </div>
+      <div class="card-body">
+        <h2>Correa — Vino tinto</h2>
+        <p>Correa en piel, tono vino tinto. Color profundo con carácter contenido; aporta distinción sin perder formalidad.</p>
+        <div class="price">$345.000 COP</div>
+        <div class="buttons">
+          <button type="button" class="buy-button">Pagar</button>
+          <button type="button" class="whatsapp-button">WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-card" data-product="Correa en cuero — Negro">
+      <div class="product-visual">
+        <img loading="lazy" decoding="async" src="NEGRO.jpg" alt="Correa de cuero color negro">
+      </div>
+      <div class="card-body">
+        <h2>Correa — Negro</h2>
+        <p>Correa en piel negra. Pieza esencial de vestuario formal: versátil, atemporal y fácil de integrar en cualquier look ejecutivo.</p>
+        <div class="price">$345.000 COP</div>
+        <div class="buttons">
+          <button type="button" class="buy-button">Pagar</button>
+          <button type="button" class="whatsapp-button">WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-card" data-product="Correa en cuero — Café">
+      <div class="product-visual">
+        <img loading="lazy" decoding="async" src="CAFE.jpg" alt="Correa de cuero color café">
+      </div>
+      <div class="card-body">
+        <h2>Correa — Café</h2>
+        <p>Correa en piel, tono café. Calidez medida y presencia serena; ideal con azules, grises y tierras.</p>
+        <div class="price">$345.000 COP</div>
+        <div class="buttons">
+          <button type="button" class="buy-button">Pagar</button>
+          <button type="button" class="whatsapp-button">WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-card" data-product="Tacón de mujer — Negro">
+      <div class="product-visual">
+        <img loading="lazy" decoding="async" src="tacon de mujer.png" alt="Tacón de mujer en negro">
+      </div>
+      <div class="card-body">
+        <h2>Tacón de mujer — Negro</h2>
+        <p>Tacón para mujer en negro. Silueta cuidada para eventos y uso diario con acabado refinado.</p>
+        <div class="price">$935.000 COP</div>
+        <div class="buttons">
+          <button type="button" class="buy-button">Pagar</button>
+          <button type="button" class="whatsapp-button">WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Carlosamas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
